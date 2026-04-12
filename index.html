@@ -1,190 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jatin Patial | ML Portfolio</title>
-<meta name="description" content="Portfolio of Jatin Patial - Machine Learning Engineer & Data Analyst">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #0f172a;
-    color: white;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10%;
-    background: rgba(30,41,59,0.8);
-    position: sticky;
-    top: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* HERO */
-.hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg,#1e293b,#0f172a);
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 50px;
-}
-
-.hero span {
-    color: #38bdf8;
-}
-
-.hero p {
-    margin: 15px 0;
-}
-
-.btn {
-    padding: 10px 20px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-/* SECTIONS */
-section {
-    padding: 60px 10%;
-}
-
-h2 {
-    margin-bottom: 20px;
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
-}
-
-/* PROJECTS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e293b;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Jatin Patial | AI Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <h3>Jatin</h3>
-    <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
 <!-- HERO -->
-<div class="hero">
-    <h1>Hi, I'm <span>Jatin Patial</span></h1>
-    <p>Machine Learning Engineer | Data Analyst</p>
-    <a href="#projects" class="btn">View Projects</a>
-</div>
+<section class="hero">
+    <h1>Jatin Patial</h1>
+    <h2>AI & ML Engineer 🚀</h2>
+    <p>Building intelligent systems using Machine Learning & Computer Vision</p>
+
+    <div class="buttons">
+        <a href="https://github.com/jatin-patial" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/jatin-patial-19132a365" target="_blank">LinkedIn</a>
+        <a href="#" class="resume">Download Resume</a>
+    </div>
+</section>
 
 <!-- ABOUT -->
-<section id="about">
+<section class="section">
     <h2>About Me</h2>
     <p>
-        I am a B.Tech Computer Science student specializing in AI & ML.
-        I build machine learning models, analyze data, and develop intelligent systems.
+        I am a B.Tech CSE student specializing in AI & Data Science.
+        Passionate about building real-world ML systems including recommendation engines,
+        NLP-based tools, and computer vision applications.
     </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>SQL</span>
+        <span>Computer Vision</span>
+        <span>Streamlit</span>
+        <span>Scikit-learn</span>
+        <span>Pandas</span>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section class="section">
     <h2>Projects</h2>
-    <div class="grid">
 
-        <div class="card">
-            <h3>House Price Prediction</h3>
-            <p>End-to-end ML project with deployment using Streamlit.</p>
-            <a href="#">GitHub</a>
+    <div class="project-card">
+        <h3>Resume Screening AI</h3>
+        <p>AI system using NLP to analyze resumes and match job roles.</p>
+        <div class="project-links">
+            <a href="#">Live</a>
+            <a href="#">Code</a>
         </div>
-
-        <div class="card">
-            <h3>Photo Finder AI</h3>
-            <p>YOLO-based real-time object detection system.</p>
-            <a href="#">GitHub</a>
-        </div>
-
-        <div class="project-card">
-  <h3>📊 Sales Analytics Dashboard</h3>
-  <p>
-    Interactive dashboard built using SQL, Python, and Streamlit to analyze sales data,
-    visualize KPIs, and generate business insights.
-  </p>
-
-  <p><strong>Tech:</strong> Python, SQL, Streamlit, Pandas</p>
-
-  <a href="https://github.com/jatin-patial/sales-dashboard" target="_blank">
-    🔗 View Code
-  </a>
-
-  <br><br>
-</div>
-
     </div>
+
+    <div class="project-card">
+        <h3>Movie Recommendation System</h3>
+        <p>Advanced recommender using TF-IDF + cosine similarity + TMDB API.</p>
+        <div class="project-links">
+            <a href="#">Live</a>
+            <a href="#">Code</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>House Price Prediction</h3>
+        <p>End-to-end ML pipeline deployed using Streamlit.</p>
+        <div class="project-links">
+            <a href="#">Live</a>
+            <a href="#">Code</a>
+        </div>
+    </div>
+
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section class="section">
     <h2>Contact</h2>
     <p>Email: jatinpatial4433@gmail.com</p>
-    <p>
-        <a href="https://linkedin.com/in/jatin-patial-19132a365">LinkedIn</a> |
-        <a href="https://github.com/jatin-patial">GitHub</a>
-    </p>
 </section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Jatin Patial</p>
-</footer>
 
 </body>
 </html>
