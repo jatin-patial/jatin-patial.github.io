@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌈 Premium Gradient Background */
+body {
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #020617 40%,
+    #1e1b4b 70%,
+    #000000 100%
+  );
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* ✨ Smooth font rendering */
+* {
+  transition: all 0.2s ease-in-out;
+}
